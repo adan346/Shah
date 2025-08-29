@@ -1,6 +1,3 @@
-const { Hercai } = require('hercai');
-const herc = new Hercai();
-
 module.exports = {
   config: {
     name: "baby",
