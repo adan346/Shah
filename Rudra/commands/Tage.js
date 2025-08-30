@@ -1,4 +1,4 @@
-module.exports = {h
+module.exports = {
 		config: {
 				name: "Pair-tag",
 				aliases: ["Pair-tag"],
