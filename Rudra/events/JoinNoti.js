@@ -31,7 +31,7 @@ module.exports.run = async function({ api, event }) {
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] ${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
     const fs = require("fs");
-    return api.sendMessage("", event.threadID, () => api.sendMessage({body:`Haseen mohtarm\n✢━━━━━━━━━━━━━━━━━━━✢\nBOT SUCCESSFULLY CONNECTED TO THE GROUP - ✅\n✢━━━━━━━━━━━━━━━━━━━✢\nBOT PREFIX. [ ${global.config.PREFIX} ]\nNOW CONTACT OWNER 😉\n${global.config.PREFIX}help - See All Commands\nBaby BOT HERE 🫡\n${global.config.PREFIX}called - [ Message ]\n✢━━━━━━━━━━━━━━━━━━━✢\nIF YOU HAVE ANY ISSUE THEN CONTACT OWNER 🤥
+    return api.sendMessage("", event.threadID, () => api.sendMessage({body:`Haseen mohtarm\n✢━━━━━━━━━━━━━━━━━━━✢\nBOT SUCCESSFULLY CONNECTED TO THE GROUP - ✅\n✢━━━━━━━━━━━━━━━━━━━✢\nBOT PREFIX - [ ${global.config.PREFIX} ]\nNOW CONTACT OWNER 😉\n${global.config.PREFIX}help - See All Commands\nJanu BOT HERE 🫡\n${global.config.PREFIX}called - [ Message ]\n✢━━━━━━━━━━━━━━━━━━━✢\nIF YOU HAVE ANY ISSUE THEN CONTACT OWNER 🤥
 FB Link : https://www.facebook.com/Neesli.ankho.2023`, attachment: fs.createReadStream(__dirname + "/cache/joinGif/bot_add.gif")} ,threadID));
   }
   else {
